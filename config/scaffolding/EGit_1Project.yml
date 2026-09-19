@@ -7,6 +7,19 @@ packages:
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
   gitBranch: main
+services:
+- serviceName: project.egit_1.integrations:Copy_SK1
+  packages:
+  - name: EGit_1Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2107
+- serviceName: project.egit_1.integrations:SK1
+  packages:
+  - name: EGit_1Project
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
